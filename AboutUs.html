@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karlo Palic Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Login-Register.css">
+    <link rel="stylesheet" href="AboutUs.css">
+</head>
+
+<body>
+    <nav class="menuBar">
+        <img src="../Karlo_Palic_SUPIT-Project/img/icons8-menu-48.png" alt="menuIcon" class="menu-icon" width="60" />
+        <ul>
+            <li class="menuItem"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-home-50.png" alt=""><a
+                    href="Home.html">Home</a></li>
+            <li class="menuItem"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-about-me-50.png" alt=""><a
+                    href="AboutUs.html">About us</a></li>
+            <li class="menuItem"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-news-50.png"><a
+                    href="News.html">News</a></li>
+            <li class="menuItemContact" onclick="ShowContactForm()"><img
+                    src="../Karlo_Palic_SUPIT-Project/img/icons8-contact-50.png"><a href="#">Contact</a></li>
+
+            <li class="menuItemLogin"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-curriculum-50.png"><a
+                    href="Cirriculum.html">Curriculum</a>
+            </li>
+            <li class="SISUPitem1"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-login-50.png"><a
+                    href="Login.html">Login</a></li>
+            </li>
+            <li class="logOut" onclick="OnClickLogout()"><img
+                    src="../Karlo_Palic_SUPIT-Project/img/icons8-logout-30.png"><a href="#">Logout</a></li>
+
+        </ul>
+        <div class="headersAboutUs">
+            <a href="#values">Our Values</a>
+            <a href="#history">History</a>
+            <a href="#algebraGroup">Algebra Group</a>
+            <a href="#location">Location</a>
+        </div>
+        <script src="MenuBar.js"></script>
+    </nav>
+
+
+    <!--Contact-->
+    <div id="contactForm">
+        <div class="contactLabel">
+            <img src="../Karlo_Palic_SUPIT-Project/img/icons8-envelope-50.png" alt="">
+            <h2>Contact us</h2>
+        </div>
+        <form action="https://www.fulek.com/mvc/supit/project-contact-form" method="post" id="formContact">
+
+            <div class="group">
+                <Label>Full name:</Label>
+                <input type="text" name="fullName" required>
+            </div>
+
+            <div class="group">
+                <Label>E-mail:</Label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="group">
+                <Label>Importance:</Label>
+                <select name="importance" required>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <Label>Message:</Label>
+                <textarea name="message" cols="30" rows="6" required></textarea>
+            </div>
+
+            <div class="groupLetter">
+                <Label>Recieve news letter:</Label>
+                <input type="checkbox" name="letter" id="letterCheck">
+            </div>
+
+            <div class="btnGroup">
+                <button type="submit" name="letterRecieve" class="btnSubmit">Submit</button>
+                <button type="button" name="letterCancel" class="btnCancel">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="campusIMG"></div>
+    <div class="aboutUs">
+        <p>About us</p>
+        <hr>
+    </div>
+    <div id="values">
+        <div class="ourValuesImg">
+            <p><img src="../Karlo_Palic_SUPIT-Project/img/icons8-lightning-50.png" alt="">Our Values</p>
+        </div>
+        <div class="paragraphValues">
+            <p id="firstValues">We promise to help you find what you love to do and that we will encourage you to
+                excel - with the quality of programs and processes, passionate lecturers, globally applicable knowledge
+                and encouraging the quality of life.
+            </p>
+            <p>
+                There are values that we believe in from the first day, which are shared by our lecturers, but also by
+                our participants, regardless of whether they are 7 or 77 years old. We have carefully selected
+                attributes that are a reflection of our values and that are key in creating a clear and unique image of
+                our brand.</p>
+        </div>
+        <div class="containerValues">
+            <div class="boxValues">
+                <h2 class="titleValues">Specialized and Quality</h2>
+                <hr>
+                <p>All our teaching programs and processes are based on global standards and the most relevant knowledge
+                    necessary for success in the labor market. We connect the strong theoretical basis with practical
+                    knowledge in order to help our participants find what they love to work. It shows how successful we
+                    are in this the fact that 100% of our students find a job within 6 months of graduation, while as
+                    many as 85% of lifelong learning program participants change jobs or advance within 3 months of
+                    completing the program.</p>
+            </div>
+            <div class="boxValues">
+                <h2 class="titleValues">Balanced</h2>
+                <hr>
+                <p>For us, education implies the academic, but also the social component of a person. We strongly
+                    believe that a person is ready to progress only when he finds balance in life. Therefore, we create
+                    an environment that will equally encourage the quality of education and a fulfilling and quality
+                    life. Investing in education always means investing in yourself. We believe that it is precisely by
+                    enrolling in a study or education program that we achieve a balance between daily obligations and
+                    the quality time we set aside for ourselves.</p>
+            </div>
+            <div class="boxValues">
+                <h2 class="titleValues">Excellent</h2>
+                <hr>
+                <p>Excellence is the key emotional differentiation of our brand - we help our trainees and students find
+                    what they love to do and become excellent at it. Our excellence is proven by numerous recognitions
+                    and certificates for the quality of our teaching programs and processes, as well as top passionate
+                    lecturers who transmit that spark to all students and attendees who come to Algebra. On the way to
+                    finding what we love, there is that moment when we realize that we can do it and we want to do it,
+                    we call that moment a spark, that's why we want everyone who is part of Algebra to become excellent
+                    in what they love to do, that is, to spark in Algebra.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="history">
+        <div class="historyImg">
+            <p><img src="../Karlo_Palic_SUPIT-Project/img/icons8-history-64.png" alt="">History</p>
+        </div>
+        <div class="paragraphHistory">
+            <p id="firstHistory">Together we build the history of Algebra. We started almost twenty years ago and with
+                you we continue the journey towards new successes.
+            </p>
+            <p>
+                We opened Algebra LAB, a unique innovation center that helps companies, public services and start-up
+                projects develop innovative business solutions that will boost the competitiveness of the economy. With
+                an investment of as much as three million kuna, we are the only ones in Croatia to have united three key
+                elements - a department of applied research and development in the digital field, a start-up incubator
+                with coworking space and an innovative educational platform intended to spread the most advanced
+                technological and business knowledge. Algebra LAB is a new place for innovations, creations, ideas and
+                dreams about the future.</p>
+        </div>
+        <div class="containersHistory">
+            <div class="containerHistory">
+                <div class="boxHistory">
+                    <h2 id="blue">1998.</h2>
+                    <h2 class="titleHistory"> - Algebra d.o.o. was founded. - adult education company</h2>
+                    <hr>
+                    <p>Algebra d.o.o. was founded in April 1998 as an adult education company. In June 1998, he recorded
+                        the first participants of the seminar on the use of computers and computer applications. In
+                        September 1998, it recorded the first significant increase in the number of service users, and
+                        through multi-digit growth in the years 1999 and 2000, it established itself on the adult
+                        education market, in the field of user application of information technologies (IT).</p>
+                </div>
+                <div class="boxHistory">
+                    <h2 id="blue">2000.</h2>
+                    <h2 class="titleHistory"> - Microsoft Authorized Training Center (ATC)</h2>
+                    <hr>
+                    <p>After a lot of effort and effort, we convinced the local office of Microsoft Croatia in 2000 that
+                        we meet the set conditions so that we could become an authorized educational center for their
+                        technologies. This authorization, the first in a series, distanced us from other educational
+                        providers from that time and provided us with access to official teaching materials and more
+                        favorable software licensing terms. We subsequently significantly improved this status in order
+                        to reach the "Gold" epithet.</p>
+                </div>
+                <div class="boxHistory">
+                    <h2 id="blue">2001.</h2>
+                    <h2 class="titleHistory"> - Adobe, Macromedia and Autodesk training center</h2>
+                    <hr>
+                    <p>Encouraged by the success of obtaining Microsoft accreditation, in 2001 we put all our strength
+                        into meeting the requirements for the establishment of an official training center for other
+                        manufacturers, and in the same year we became: Macromedia Authorized Training Center, Adobe
+                        Authorized Training Provider, Autodesk Authorized Training Center and IBM Business Partner.</p>
+                </div>
+            </div>
+
+            <div class="containerHistory">
+                <div class="boxHistory">
+                    <h2 id="blue">2002.</h2>
+                    <h2 class="titleHistory"> - School of Algebra founded</h2>
+                    <hr>
+                    <p>At the beginning of 2002, Algebra d.o.o. founded the School of Algebra, and in the same year it
+                        moved to a much larger and better space at Maksimirska 58a, Zagreb, where a total of 6
+                        classrooms and about 800 m2 of organized educational space are available to students. According
+                        to Microsoft Croatia's estimates, the share of Algebra in the Croatian educational services
+                        market for Microsoft tools grew to 30%-35% that year.</p>
+                </div>
+                <div class="boxHistory">
+                    <h2 id="blue">2003.</h2>
+                    <h2 class="titleHistory"> - The College of Algebra has become a leading provider of education in IT
+                    </h2>
+                    <hr>
+                    <p>By introducing a series of new adult education programs accredited by the Ministry in charge of
+                        education over the past few years, in 2003, in just one year, Algebra jumped from 5th to 1st
+                        place as a computer education provider (measured by revenue and number of participants),
+                        achieving growth in one year of operation of 91.8%. We still hold the position of the leading
+                        educational system in adult education today.</p>
+                </div>
+                <div class="boxHistory">
+                    <h2 id="blue">2007.</h2>
+                    <h2 class="titleHistory"> - College of Algebra receives accreditation</h2>
+                    <hr>
+                    <p>After more than 2 years of intensive preparations, at the end of 2007, the College of Applied
+                        Computing was founded, which received a permit from the Ministry of Science, Education and
+                        Sports in June 2008. This event set new guidelines for the development of the Algebra
+                        educational group and in a certain way successfully rounded off the efforts to start a higher
+                        education program that were initiated back in 2002 through the implementation of the IBM ACE
+                        educational program. The implementation of the curriculum begins in the FER premises and in the
+                        Algebra building in Maksimirska street.</p>
+                </div>
+            </div>
+
+            <div class="containerHistory">
+                <div class="boxHistory">
+                    <h2 id="blue">2013.</h2>
+                    <h2 class="titleHistory"> - Excellent results in European projects, quality still in focus</h2>
+                    <hr>
+                    <p>We further expanded our capacities by adding new classrooms at the address in Ilica, and we also
+                        successfully passed the program implementation quality check organized by FER and extended the
+                        certificate "Approved by FER" until 2016. The entire Algebra group was rated as the leading ECDL
+                        center in Croatia, and we were also highlighted as an example in the implementation of EU
+                        projects, which was crowned by the visit of EU Commissioner Mr. Andor. Algebra University has a
+                        new logo and visual identity starting this year.</p>
+                </div>
+                <div class="boxHistory">
+                    <h2 id="blue">2015.</h2>
+                    <h2 class="titleHistory"> - Digital marketing studies - we're pushing the boundaries again</h2>
+                    <hr>
+                    <p>After two years of intensive preparations and the initial accreditation procedure, the University
+                        of Algebra received permits in January 2015 for the new undergraduate and graduate Study of
+                        Digital Marketing, the first in this part of Europe. We know that there is still much that needs
+                        to be done in front of us. We know that only sometimes are we allowed to turn around and look
+                        back in order to remember the beautiful moments that marked our nearly 20 years of work. Thank
+                        you for believing in us all these years and helping us grow.</p>
+                </div>
+                <div class="boxHistory">
+                    <h2 id="blue">2016.</h2>
+                    <h2 class="titleHistory"> - We are launching an MBA e-leadership course - doing business in digital
+                        economy</h2>
+                    <hr>
+                    <p>We have added one of the first Croatian business schools to our system: the International
+                        Graduate Business School (IgBS Zagreb), and we are also introducing a graduate MBA study of
+                        eLeadership (eVođenja) in English into our program. This study is mostly carried out by teachers
+                        from the University of Indiana, Kelley School of Business, one of the five leading American
+                        business schools according to the respected business magazine Bloomberg, while some specific
+                        topics are reserved for Croatian and European professors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="algebraGroup">
+        <div class="algebraGroupImg">
+            <p><img src="../Karlo_Palic_SUPIT-Project/img/icons8-group-50.png" alt="">Algebra Group</p>
+        </div>
+        <div class="paragraphAlgebraGroup">
+            <p id="firstAlgebraGroup">Algebra Group is the leading Croatian and regional private education system
+                present in 30 cities throughout the Republic of Croatia, with more than 120 full-time employees and more
+                than 400 external associates.
+            </p>
+            <p>
+                Through the past almost 20 years of work, Algebra has become the most significant regional educational
+                partner of Microsoft, Cisco, Adobe, Autodesk, ECDL, VMware, EC-Council and others. In adult education,
+                we educate about 18,000 participants of seminars and education programs annually, while in higher
+                education we enroll more than 300 new students every year. The quality of Algebra's business has been
+                recognized by both our clients and all major software manufacturers, and it is proven by the implemented
+                ISO 9001:2000 certificate that we introduced back in 2004.</p>
+        </div>
+        <div class="containerAlgebraGroup">
+            <div class="boxAlgebraGroup">
+                <h2 class="titleAlgebraGroup">EC-Council Accredited Training Center - accredited training center</h2>
+                <hr>
+                <img src="../Karlo_Palic_SUPIT-Project/img/EC-Council.png" alt="">
+            </div>
+            <div class="boxAlgebraGroup">
+                <h2 class="titleAlgebraGroup"> Cisco Networking Academy, Cisco Academy of network technologies</h2>
+                <hr>
+                <img src="../Karlo_Palic_SUPIT-Project/img/1024px-Cisco_academy.png" alt="">
+            </div>
+            <div class="boxAlgebraGroup">
+                <h2 class="titleAlgebraGroup">VUE Examination Center for candidate testing</h2>
+                <hr>
+                <img src="../Karlo_Palic_SUPIT-Project/img/VUElogo.jpg" alt="">
+            </div>
+            <div class="boxAlgebraGroup">
+                <h2 class="titleAlgebraGroup">Autodesk training center for AutoCAD, Inventor and 3D Studio tools</h2>
+                <hr>
+                <img src="../Karlo_Palic_SUPIT-Project/img/autodesk.png" alt="">
+            </div>
+        </div>
+
+        <div class="containerAlgebraGroup">
+            <div class="boxAlgebraGroup">
+                <h2 class="titleAlgebraGroup">Adobe authorized training partner for graphic and web applications</h2>
+                <hr>
+                <img src="../Karlo_Palic_SUPIT-Project/img/auth_training_cntr.gif" alt="">
+            </div>
+            <div class="boxAlgebraGroup">
+                <h2 class="titleAlgebraGroup">Microsoft Gold Certified Partner for Learning Solutions</h2>
+                <hr>
+                <img src="../Karlo_Palic_SUPIT-Project/img/ms_new.png" alt="">
+            </div>
+            <div class="boxAlgebraGroup">
+                <h2 class="titleAlgebraGroup">Red Hat Academy - supports classes and certification exams</h2>
+                <hr>
+                <img src="../Karlo_Palic_SUPIT-Project/img/redhatLogo.png" alt="">
+            </div>
+            <div class="boxAlgebraGroup">
+                <h2 class="titleAlgebraGroup">Oracle Approved Education Center - implementation of Oracle education</h2>
+                <hr>
+                <img src="../Karlo_Palic_SUPIT-Project/img/oracleLogo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="location">
+        <div class="locationImg">
+            <p><img src="../Karlo_Palic_SUPIT-Project/img/icons8-location-50.png" alt="">How to reach us</p>
+        </div>
+        <div class="inBackground">
+            <div class="containerLocation">
+                <div class="boxLocation">
+                    <h2 class="titleLocation"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-locationBlue-50.png"
+                            alt="">Location</h2>
+                    <p>Algebra is located within the campus of the Croatian Catholic University (HKS) in Zagreb, at
+                        Ilica 242. The entrance to the campus is located in Domobranska street. Within the campus,
+                        Algebra operates in two locations: in a newly renovated building from the beginning of the 20th
+                        century that covers more than 3,500 square meters, and on the 2nd floor of a modern new office
+                        building located in the immediate vicinity.</p>
+                </div>
+                <div class="boxLocation">
+                    <h2 class="titleLocation"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-compasBlue-64.png"
+                            alt="">How to reach us?</h2>
+                    <p id="lastP">Algebra is located in the western part of the city of Zagreb, one hundred meters from
+                        the tram
+                        stop Sv. Duh and about 15 km away from Zagreb airport.</p>
+                </div>
+
+            </div>
+            <div class="containerLocation">
+                <div class="boxLocation">
+                    <h2 class="titleLocation"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-tramBlue-50.png"
+                            alt="">Public transport</h2>
+                    <p>It is 6 tram stops away from the main square, Ban Jelačić Square, on lines 6 and 11 in the
+                        direction of Črnomerac. It is 8 stops away from the Main Railway Station by tram line 6, also in
+                        the direction of Črnomerac.</p>
+                </div>
+                <div class="boxLocation">
+                    <h2 class="titleLocation"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-carBlue-50.png"
+                            alt="">Personal vehicle</h2>
+                    <p>Information about arriving by car from the direction of Slavonska avenue is available here, from
+                        the direction of Zagrebačka avenue here, and from the direction of Jadranska avenue Unutar
+                        kampusa posjetiteljima je na raspolaganju otvoreni parking koji se naplaćuje 4 kune po satu, dok
+                        se izvan kampusa nalazi III. parkirna zona Zagrebparkinga.</p>
+                </div>
+                <div class="boxLocation">
+                    <h2 class="titleLocation"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-parkingBlue-50.png"
+                            alt="">Parking</h2>
+                    <p>Unutar kampusa posjetiteljima je na raspolaganju otvoreni parking koji se naplaćuje 4 kune po
+                        satu, dok se izvan kampusa nalazi III. parkirna zona Zagrebparkinga.</p>
+                </div>
+
+            </div>
+            <div class="activeMap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.0500124326054!2d15.938550575957818!3d45.81025677108164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6d74e265877%3A0x1a4f4eae9fc461c5!2sAlgebra%20University%20College!5e0!3m2!1sen!2shr!4v1684309826257!5m2!1sen!2shr"
+                    width="1200" height="600" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footerAboutUs">
+            <p>Be great at what you love!</p>
+            <p id="sparkle">Sparkle</p>
+        </div>
+    </div>
+
+    <script src="AboutUs.js"></script>
+    <script src="Contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="Login.js"></script>
+    <script src="Register.js"></script>
+    <script src="GetToken.js"></script>
+    <script src="Logout.js"></script>
+</body>
+
+</html>

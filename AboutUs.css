@@ -1,0 +1,433 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.campusIMG {
+    background-image: url("../Karlo_Palic_SUPIT-Project/img/campus-aerial-min-1.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    animation: slideFromTop 1s ease-out;
+}
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+div.headersAboutUs {
+    text-align: center;
+    background-color: black;
+    padding-top: 25px;
+}
+
+.headersAboutUs a {
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+    padding-right: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.headersAboutUs a:last-child{
+    padding-right: 0;
+}
+.headersAboutUs a:hover{
+    color: #d33f3aed;
+}
+
+#values,
+#algebraGroup,
+#history,
+#location {
+    scroll-margin-top: 200px;
+}
+
+.aboutUs {
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutUs p {
+    margin: 10px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.aboutUs hr {
+    border-top: 3px solid orange;
+    border-radius: 5px;
+}
+
+/*Our Values*/
+
+.ourValuesImg {
+    text-align: center;
+}
+
+.ourValuesImg img {
+    width: 25px;
+    height: 25px;
+}
+
+.ourValuesImg p {
+    margin: 50px 0px 70px 0px;
+    color: #B40029;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.paragraphValues {
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(245, 245, 245);
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.paragraphValues p {
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 60px;
+    font-size: 1.3rem;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+
+.paragraphValues p#firstValues {
+    padding: 60px 0px 50px 0px;
+    font-size: 1.3rem;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+
+.containerValues {
+    display: flex;
+    margin: 0 auto;
+    width: 1300px;
+    padding-top: 50px;
+}
+
+.boxValues {
+    border: 5px solid rgb(245, 245, 245);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    min-width: 400px;
+}
+
+.boxValues:last-child {
+    margin-right: 0;
+}
+
+.titleValues {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 5px 10px 5px;
+}
+
+.containerValues p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.containerValues hr {
+    border-top: 3px solid rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+/*History*/
+
+.historyImg {
+    text-align: center;
+}
+
+.historyImg img {
+    width: 30px;
+    height: 30px;
+}
+
+.historyImg p {
+    margin: 70px 0px 70px 0px;
+    color: #B40029;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.paragraphHistory {
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(245, 245, 245);
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.paragraphHistory p {
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 60px;
+    font-size: 1.3rem;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+
+.paragraphHistory p#firstHistory {
+    padding: 60px 0px 50px 0px;
+    font-size: 1.3rem;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+
+.containerHistory {
+    display: flex;
+    margin: 0 auto;
+    width: 1300px;
+    padding-top: 10px
+}
+
+.containersHistory {
+    padding-top: 50px;
+}
+
+.boxHistory {
+    border: 5px solid rgb(245, 245, 245);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    min-width: 400px;
+}
+
+.boxHistory:last-child {
+    margin-right: 0;
+}
+
+h2.titleHistory {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 5px 10px 5px;
+    display: inline;
+}
+
+h2#blue {
+    display: inline;
+    color: rgb(142, 142, 255);
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 0px 10px 0px;
+}
+
+.containerHistory p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.containerHistory hr {
+    border-top: 3px solid rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+/*Algebra Group*/
+
+.algebraGroupImg {
+    text-align: center;
+}
+
+.algebraGroupImg img {
+    width: 25px;
+    height: 25px;
+}
+
+.algebraGroupImg p {
+    margin: 50px 0px 70px 0px;
+    color: #B40029;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.paragraphAlgebraGroup {
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(245, 245, 245);
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.paragraphAlgebraGroup p {
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 60px;
+    font-size: 1.3rem;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+
+.paragraphAlgebraGroup p#firstAlgebraGroup {
+    padding: 60px 0px 50px 0px;
+    font-size: 1.3rem;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+
+.containerAlgebraGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+
+.boxAlgebraGroup {
+    flex: 0 0 calc(25% - 40px);
+    text-align: center;
+    margin: 20px;
+}
+
+.boxAlgebraGroup img {
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.titleAlgebraGroup {
+    font-size: 0.7rem;
+    font-weight: 500;
+    min-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    white-space: normal;
+    margin: 0;
+    padding: 5px 5px 0px 5px;
+}
+
+.containerAlgebraGroup hr {
+    border-top: 3px solid rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+/*Location*/
+.inBackground {
+    background-image: url("../Karlo_Palic_SUPIT-Project/img/directionsToAlgebra.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.locationImg {
+    text-align: center;
+}
+
+.locationImg img {
+    width: 25px;
+    height: 25px;
+}
+
+.locationImg p {
+    margin: 50px 0px 70px 0px;
+    color: #B40029;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.containerLocation {
+    background-color: rgb(245, 245, 245);
+    display: inline-grid;
+    margin: 100px 10px 0px 0px;
+    width: 600px;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.boxLocation {
+    padding: 10px;
+    min-width: 400px;
+}
+
+.containerLocation:nth-of-type(2) {
+    margin: 100px 0px 0px 0px;
+}
+
+.titleLocation {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 5px 5px 10px 5px;
+}
+
+.titleLocation img {
+    height: 25px;
+}
+
+.containerLocation p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 70px 0px;
+}
+
+p#lastP {
+    padding-bottom: 166px;
+}
+
+.activeMap iframe {
+    margin-top: 20px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+/*Footer*/
+.footerAboutUs {
+    background-image: url("../Karlo_Palic_SUPIT-Project/img/spark-bg.jpg");
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+}
+
+.footerAboutUs p {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(245, 245, 245);
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#sparkle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #e00034;
+}
+
+@media (max-width: 700px) {
+    .containerValues, .containerAlgebraGroup, .containerHistory, .containerLocation {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karlo Palic Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Login-Register.css">
+    <link rel="stylesheet" href="News3.css">
+</head>
+
+<body>
+    <nav class="menuBar">
+        <img src="../Karlo_Palic_SUPIT-Project/img/icons8-menu-48.png" alt="menuIcon" class="menu-icon" width="60" />
+        <ul>
+            <li class="menuItem"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-home-50.png" alt=""><a
+                    href="Home.html">Home</a></li>
+            <li class="menuItem"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-about-me-50.png" alt=""><a
+                    href="AboutUs.html">About us</a></li>
+            <li class="menuItem"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-news-50.png"><a
+                    href="News.html">News</a></li>
+            <li class="menuItemContact" onclick="ShowContactForm()"><img
+                    src="../Karlo_Palic_SUPIT-Project/img/icons8-contact-50.png"><a href="#">Contact</a></li>
+
+            <li class="menuItemLogin"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-curriculum-50.png"><a
+                    href="Cirriculum.html">Curriculum</a>
+            </li>
+            <li class="SISUPitem1"><img src="../Karlo_Palic_SUPIT-Project/img/icons8-login-50.png"><a
+                    href="Login.html">Login</a></li>
+            </li>
+            <li class="logOut" onclick="OnClickLogout()"><img
+                    src="../Karlo_Palic_SUPIT-Project/img/icons8-logout-30.png"><a href="#">Logout</a></li>
+
+        </ul>
+        <script src="MenuBar.js"></script>
+    </nav>
+
+    <!--Contact-->
+    <div id="contactForm">
+        <div class="contactLabel">
+            <img src="../Karlo_Palic_SUPIT-Project/img/icons8-envelope-50.png" alt="">
+            <h2>Contact us</h2>
+        </div>
+        <form action="https://www.fulek.com/mvc/supit/project-contact-form" method="post" id="formContact">
+
+            <div class="group">
+                <Label>Full name:</Label>
+                <input type="text" name="fullName" required>
+            </div>
+
+            <div class="group">
+                <Label>E-mail:</Label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="group">
+                <Label>Importance:</Label>
+                <select name="importance" required>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <Label>Message:</Label>
+                <textarea name="message" cols="30" rows="6" required></textarea>
+            </div>
+
+            <div class="groupLetter">
+                <Label>Recieve news letter:</Label>
+                <input type="checkbox" name="letter" id="letterCheck">
+            </div>
+
+            <div class="btnGroup">
+                <button type="submit" name="letterRecieve" class="btnSubmit">Submit</button>
+                <button type="button" name="letterCancel" class="btnCancel">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="news3Image">
+
+    </div>
+
+    <div class="news3">
+        <p>Digtal junior summer</p>
+        <hr>
+    </div>
+    <div class="news3Text">
+        <p>Algebra Junior organizes educational and fun summer holidays for
+            all elementary school students! This year, too, we have prepared
+            digital workshops for children whose focus is solving various
+            problems using technology, multimedia, digital design and
+            communications, and creating content in all multimedia and software
+            forms. The workshops are held as part of the Digital Summer Camp
+            in Crikvenica and the Digital Summer School in Zagreb so that we
+            can socialize, have fun and learn both at sea and on the continent!
+            Two different programs aimed at children from 1st to 8th grade will
+            be held at the digital camp and at the school. Depending on the
+            chosen date, participants will go through the 1st or 2nd program,
+            and in the case of attending two-week programs - both. In the first
+            program, our ninjas learn to be music managers, while in the second,
+            they are journalists and mass media information creators. Check the
+            dates, prices and locations of the school and camp at the following
+            link.</p>
+    </div>
+
+    <div class="footerNews3">
+        <p>Be great at what you love!</p>
+        <p id="sparkle">Sparkle</p>
+    </div>
+
+
+    <script src="News.js"></script>
+    <script src="Contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="Login.js"></script>
+    <script src="Register.js"></script>
+    <script src="GetToken.js"></script>
+    <script src="Logout.js"></script>
+
+</body>
+
+</html>

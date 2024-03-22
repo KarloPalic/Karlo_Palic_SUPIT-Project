@@ -1,0 +1,14 @@
+input#curriculum-search{
+    margin: 100px 0px 0px 100px;
+}
+
+div#boxes{
+    margin: 50px 0px 20px 200px;
+}
+
+th{
+    padding-right: 30px;
+}
+td{
+    padding-right: 30px;
+}

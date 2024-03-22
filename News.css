@@ -1,0 +1,151 @@
+.news {
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.news p {
+    margin: 15px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.news hr {
+    border-top: 3px solid orange;
+    border-radius: 5px;
+}
+
+/*Images*/
+.imagesNews {
+    background-color: rgb(245, 245, 245);
+    margin-top: 30px;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesNews a {
+    text-decoration: none;
+}
+
+div.newsImage {
+    text-align: center;
+    padding-right: 150px;
+    animation: newsImageAnimation 2s forwards;
+}
+
+div.newsImage:last-child {
+    padding-right: 0px;
+}
+
+@keyframes newsImageAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.newsImage p {
+    color: rgb(245, 245, 245);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 15px 0px 15px;
+    margin: 0;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+a.firstImage {
+    display: inline-block;
+    background-image: url("../Karlo_Palic_SUPIT-Project/img/gallery1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    border: 20px solid rgb(217, 217, 217);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a.secondImage {
+    display: inline-block;
+    background-image: url("../Karlo_Palic_SUPIT-Project/img/news2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    border: 20px solid rgb(217, 217, 217);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a.thirdImage {
+    display: inline-block;
+    background-image: url("../Karlo_Palic_SUPIT-Project/img/news3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    border: 20px solid rgb(217, 217, 217);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+p#dateNews {
+    margin-top: 40px;
+    color: rgb(235, 235, 0);
+}
+
+p#dateNews2 {
+    margin-top: 50px;
+    color: rgb(235, 235, 0);
+}
+
+p#dateNews3 {
+    margin-top: 80px;
+    color: rgb(235, 235, 0);
+}
+
+/*Footer*/
+.footerNews {
+    background-image: url("../Karlo_Palic_SUPIT-Project/img/spark-bg.jpg");
+    width: 100%;
+    height: 232px;
+    background-size: cover;
+}
+
+.footerNews p {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(245, 245, 245);
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#sparkle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #e00034;
+}
